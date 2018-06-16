@@ -1,0 +1,39 @@
+{
+  "insert": [
+    {
+    "table_name": "table_a",
+    "values": [
+      {"id": "1", "name": "Schene 1", "code": 3232},
+      {"id": "2", "name": "Schene 2", "code": 3231},
+      {"id": "3", "name": "Schene 3", "code": 3233},
+      {"id": "4", "name": "Schene 4", "code": 3234}
+    ]
+    },
+    {
+      "table_name": "table_b",
+      "values": [
+        {"code": 3232, "url": "somme_url_1"},
+        {"code": 3231, "url": "somme_url_2"}
+      ]
+    }
+  ],
+  "update": [
+    {
+      "table_name": "table_a",
+      "values": {"name": "Schene A"},
+      "filter": {"id": "1"}
+    }
+  ],
+  "fetch": [
+    {
+      "table_name": "table_a",
+      "filter": {"name": "Schene A"}
+    }
+  ],
+  "delete": [
+    {
+      "table_name": "table_a",
+      "filter": {"id": "1"}
+    }
+  ]
+}

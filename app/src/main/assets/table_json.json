@@ -1,0 +1,39 @@
+{
+  "_dbName": "db_name.db",
+  "_version": 1,
+  "_tables": [
+    {
+      "_name": "table_a",
+      "_foriegn_keys": [
+        {"_column": "code", "_ref_table": "table_b", "_ref_key": "id" }
+      ],
+      "_columns": {
+        "id": {
+          "_type": "VARCHAR(500)",
+          "_primary_key": "id"
+        },
+        "name": {
+          "_type": "VARCHAR(500)"
+        },
+        "code": {
+          "_type": "INTEGER"
+        }
+      }
+    },
+    {
+      "_name": "table_b",
+      "_foriegn_keys": [
+
+      ],
+      "_columns": {
+        "code": {
+          "_type": "VARCHAR(500)",
+          "_primary_key": "id"
+        },
+        "url": {
+          "_type": "VARCHAR(500)"
+        }
+      }
+    }
+  ]
+}
